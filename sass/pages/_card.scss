@@ -1,0 +1,23 @@
+.card-section {
+  margin-top: 5rem;
+
+  &__header-container {
+    padding: 5px;
+  }
+
+  &__txt-contaner {
+    p {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  &__input {
+    input {
+      padding: 5px;
+    }
+  }
+
+  &__table2 {
+    padding-top: 2rem;
+  }
+}

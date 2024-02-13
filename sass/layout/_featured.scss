@@ -1,0 +1,16 @@
+.main-section {
+}
+.featured-section {
+  &__img-container {
+    max-width: 40rem;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2rem);
+    }
+  }
+  &__img {
+    max-width: 100%;
+  }
+}

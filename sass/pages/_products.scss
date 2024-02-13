@@ -1,0 +1,19 @@
+//  featured products
+.products-section {
+  &__navigator-container {
+    padding: 2rem;
+
+    span {
+      display: inline-block;
+      border: 1px solid $color-primary;
+      padding: 0.6rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2 linear;
+
+      &:hover {
+        background-color: $color-third;
+      }
+    }
+  }
+}

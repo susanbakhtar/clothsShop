@@ -1,0 +1,47 @@
+.footer-section {
+  // insted row gap for custom size
+  margin-top: 20rem;
+
+  border-top: 1px solid $color-primary;
+  padding-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  @media only screen and (max-width: $screen-542px) {
+  }
+  &__article {
+  }
+  &--footer {
+  }
+  &__logo-container {
+  }
+
+  &__logo-app {
+    max-width: 7rem;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.copy-right {
+  margin: 6rem;
+}
+
+//brand
+// .brand-section {
+//   // insted row gap for custom size
+//   // insted row gap for custom size
+//   padding-top: 5rem;
+
+//   &__article {
+//   }
+//   &__img-container {
+//     max-width: 9rem;
+//   }
+//   &__img {
+//     max-width: 100%;
+//   }
+// }

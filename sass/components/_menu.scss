@@ -1,0 +1,30 @@
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  z-index: 200;
+
+  @media only screen and (max-width: $screen-586px) {
+    display: block;
+    width: 1px;
+
+    &__svg {
+    }
+  }
+}
+.sticky {
+  transition: all 0.2s;
+  visibility: visible;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  width: 100vw;
+  transition: all 0.2s;
+  animation: moveInRight 0.3s;
+}

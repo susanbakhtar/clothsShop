@@ -1,0 +1,24 @@
+.testemonial-section {
+  // insted row gap for custom size
+  margin-top: 1rem;
+
+  &__article {
+    transition: all 0.5s;
+    height: 30rem;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+  }
+  &__svg-icon {
+  }
+  &__txt {
+  }
+  &__img-container {
+    max-width: 8rem;
+    margin-top: 1rem;
+  }
+  &__img {
+    max-width: 100%;
+  }
+}

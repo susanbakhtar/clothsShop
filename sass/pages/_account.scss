@@ -1,0 +1,91 @@
+.account-section {
+  grid-column: 1/-1;
+  display: grid;
+  @include grid-12-column;
+
+  &__img-contianer {
+    width: 45rem;
+    grid-column: 1/6;
+    justify-self: center;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 7px 10px 13px 0px #b3b3b3, -1px -9px 5px 0px #e6e6e6;
+      border-radius: 33% 67% 78% 22% / 41% 59% 41% 59%;
+      background-color: #e2e8ec;
+    }
+  }
+
+  // form
+  &__form-section {
+    grid-column: 6/-1;
+
+    display: grid;
+    @include grid-12-column;
+    align-items: center;
+    justify-items: center;
+  }
+  &__form-container {
+    grid-column: 1/-1;
+    max-width: 30rem;
+    row-gap: 4rem;
+
+    display: grid;
+    @include grid-12-column;
+    border: 1px solid $color-primary;
+    padding: 1.3rem 0;
+    overflow: hidden;
+  }
+  &__header-container {
+    grid-column: 1/-1;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    span {
+      cursor: pointer;
+      transition: all 0.2s;
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__login,
+  &__regester {
+    grid-column: 1/-1;
+    display: flex;
+    flex-flow: column;
+    transition: all 0.2s;
+    grid-row: 2;
+
+    input {
+      height: 3rem;
+      padding: 0 10px;
+      border: 1px solid $color-primary;
+      outline: none;
+      margin: 1rem;
+    }
+
+    .btn {
+      margin-top: 1rem;
+    }
+
+    a {
+      text-align: center;
+      margin-top: 1.2rem;
+    }
+  }
+
+  &__login {
+    transform: translateX(0);
+  }
+
+  &__regester {
+    grid-row: 2;
+    transform: translateX(-100%);
+  }
+}
+
+.border-1 {
+  border-bottom: 1px solid $color-primary;
+}

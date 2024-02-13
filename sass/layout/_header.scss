@@ -1,0 +1,90 @@
+.header-section {
+  // insted row gap for custom size
+  margin-top: 1.9rem;
+  margin-bottom: 8rem;
+
+  &--margin-bottom {
+    margin-bottom: 3rem;
+  }
+  //   for fix bag, anmimation, always use this code
+  backface-visibility: hidden;
+
+  &__img-container {
+  }
+
+  &__logo-img {
+    max-width: 7rem;
+    filter: grayscale(100%);
+  }
+
+  &__nav {
+    height: 100%;
+
+    @media only screen and (max-width: $screen-586px) {
+      height: 100dvh;
+    }
+  }
+
+  &__ul {
+    @include list-style-none;
+    height: 100%;
+  }
+
+  &__li {
+  }
+
+  &__link {
+  }
+  &__icons {
+    grid-column: 12/13;
+    justify-self: end;
+
+    @media only screen and (max-width: $screen-586px) {
+      grid-column: 2/11;
+
+      justify-self: flex-end;
+      @include display-flex-row;
+      @include align-items-cntr;
+      @include justify-content-cntr;
+      gap: 1rem;
+
+      @media only screen and (max-width: $screen-252px) {
+      }
+    }
+  }
+
+  &__hero-section {
+    margin-top: 2rem;
+  }
+
+  &__text-container {
+    animation: moveBottom 1s ease-out;
+  }
+
+  &__text {
+  }
+
+  &__shop-name {
+  }
+
+  &__p {
+  }
+
+  &__hero-img-section {
+  }
+  &__hero-img__container {
+    max-width: 35rem;
+
+    @media only screen and (max-width: $screen-542px) {
+      max-width: 22rem;
+    }
+
+    @media only screen and (max-width: $screen-252px) {
+      max-width: 30rem;
+    }
+  }
+  &__hero-girl-img {
+    max-width: 100%;
+    animation: moveBottom 1s ease-out;
+  }
+}
